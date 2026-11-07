@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1220">
+  <title>Nhịp Việc — Trợ lý tổng hợp công việc</title>
+  <style>
+    :root{color-scheme:dark;--bg:#0b1220;--panel:#121d30;--panel2:#16243a;--line:#263750;--text:#edf4ff;--muted:#a8b8cd;--blue:#61c7ff;--mint:#73e0c2;--violet:#b5a1ff;--amber:#ffd27a;--max:1120px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 82% 2%,#163154 0,transparent 29rem),var(--bg);color:var(--text);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}.topbar{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff12}.brand{display:flex;gap:12px;align-items:center;text-decoration:none;font-weight:800;letter-spacing:.01em}.brand-mark{width:38px;height:38px;border-radius:13px;display:grid;place-items:center;background:linear-gradient(140deg,#52caff,#73e0c2);color:#071321;font-size:20px;box-shadow:0 8px 30px #4fc6ff38}.nav{display:flex;gap:28px;color:var(--muted);font-size:14px}.nav a{text-decoration:none}.nav a:hover{color:var(--blue)}.hero{padding:82px 0 58px;display:grid;grid-template-columns:1.1fr .9fr;gap:54px;align-items:center}.eyebrow{display:inline-flex;gap:8px;align-items:center;color:var(--mint);font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase}.eyebrow:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--mint);box-shadow:0 0 15px var(--mint)}h1{font-size:clamp(42px,6vw,70px);line-height:1.06;letter-spacing:-.045em;margin:18px 0 20px;max-width:680px}h1 span{color:var(--blue)}.lead{font-size:18px;color:#bfcee0;max-width:630px;margin:0 0 28px}.hero-actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.button{display:inline-flex;align-items:center;gap:9px;padding:12px 17px;border-radius:12px;background:var(--blue);color:#071321;text-decoration:none;font-weight:800;box-shadow:0 8px 28px #55c8ff2b}.button.secondary{background:#ffffff08;color:var(--text);border:1px solid var(--line);box-shadow:none}.micro{font-size:13px;color:var(--muted);margin-top:14px}.report-card{border:1px solid #35516e;background:linear-gradient(155deg,#192a42,#111b2c);border-radius:22px;padding:20px;box-shadow:0 28px 80px #0005;transform:rotate(1deg)}.windowbar{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding:0 0 14px;color:var(--muted);font-size:12px}.dots{display:flex;gap:5px}.dots i{width:7px;height:7px;border-radius:50%;background:#52637a}.report-title{font-size:19px;font-weight:800;margin:19px 0 12px}.report-meta{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:17px}.pill{padding:4px 9px;border-radius:999px;background:#ffffff0b;border:1px solid #ffffff14;color:#bfd0e5;font-size:11px}.report-row{display:grid;grid-template-columns:28px 1fr auto;gap:10px;align-items:start;padding:12px 0;border-top:1px solid #ffffff0d;font-size:13px}.num{width:25px;height:25px;border-radius:8px;display:grid;place-items:center;background:#1b4260;color:var(--blue);font-weight:800}.status{font-size:11px;padding:3px 7px;border-radius:7px;background:#143b35;color:var(--mint);white-space:nowrap}.status.wait{background:#3c321f;color:var(--amber)}.small{color:var(--muted);font-size:12px}.quote{margin:48px 0 18px;padding:19px 23px;background:linear-gradient(100deg,#102d46,#14243a);border:1px solid #244e6d;border-left:4px solid var(--blue);border-radius:0 15px 15px 0;color:#d8e7f6;font-size:17px}.section{padding:35px 0}.section-head{max-width:720px;margin-bottom:23px}.section-head h2{font-size:clamp(27px,3vw,38px);line-height:1.2;margin:0 0 10px;letter-spacing:-.03em}.section-head p{margin:0;color:var(--muted)}.grid{display:grid;gap:14px}.grid.four{grid-template-columns:repeat(4,1fr)}.grid.three{grid-template-columns:repeat(3,1fr)}.card{background:linear-gradient(145deg,#16243a,#111c2d);border:1px solid var(--line);border-radius:17px;padding:20px}.icon{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;background:#193b51;color:var(--blue);font-size:18px;margin-bottom:14px}.card h3{font-size:16px;margin:0 0 7px}.card p{margin:0;color:var(--muted);font-size:14px}.time-table{width:100%;border-collapse:collapse;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#121d30}.time-table th,.time-table td{text-align:left;padding:14px 18px;border-bottom:1px solid #ffffff0d}.time-table th{font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:#93a8c0;background:#17253a}.time-table td{font-size:14px}.time-table tr:last-child td{border:0}.check{color:var(--mint);font-weight:700}.workflow{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;position:relative}.step{position:relative;padding:19px 16px 17px;background:#121e31;border:1px solid var(--line);border-radius:15px;min-height:165px}.step-index{font-size:12px;color:var(--blue);font-weight:800;letter-spacing:.06em}.step h3{font-size:15px;line-height:1.35;margin:12px 0 8px}.step p{font-size:12px;color:var(--muted);margin:0}.output{display:grid;grid-template-columns:1fr 1fr;gap:14px}.output .card{min-height:140px}.source{color:var(--blue);text-decoration:underline;text-underline-offset:3px}.footer{padding:44px 0 35px;margin-top:35px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.note{font-size:12px;color:#8499b3;margin-top:14px}
+    @media(max-width:850px){.hero{grid-template-columns:1fr;gap:35px;padding-top:58px}.report-card{max-width:580px}.grid.four{grid-template-columns:repeat(2,1fr)}.workflow{grid-template-columns:repeat(2,1fr)}.nav{gap:14px}}
+    @media(max-width:560px){.wrap{width:min(100% - 28px,var(--max))}.nav{display:none}.hero{padding:48px 0 34px}h1{font-size:45px}.lead{font-size:16px}.grid.four,.grid.three,.workflow,.output{grid-template-columns:1fr}.time-table th,.time-table td{padding:12px 10px;font-size:12px}.quote{font-size:15px;padding:16px}.step{min-height:0}}
+  </style>
+</head>
+<body>
+  <header class="wrap topbar">
+    <a class="brand" href="#top"><span class="brand-mark">N</span><span>Nhịp Việc <span style="color:var(--blue)">AI</span></span></a>
+    <nav class="nav" aria-label="Điều hướng"><a href="#gioi-thieu">Giới thiệu</a><a href="#quy-trinh">Quy trình</a><a href="#dau-ra">Đầu ra</a></nav>
+  </header>
+  <main id="top" class="wrap">
+    <section class="hero">
+      <div>
+        <div class="eyebrow">Trợ lý công việc cá nhân</div>
+        <h1>Nhìn lại tuần làm việc <span>rõ ràng hơn.</span></h1>
+        <p class="lead">Nhịp Việc gom những ghi chú, cập nhật dự án và nội dung họp bạn cung cấp thành bản tổng kết tuần gọn, dễ kiểm tra và dễ chia sẻ.</p>
+        <div class="hero-actions"><a class="button" href="#quy-trinh">Khám phá quy trình <span aria-hidden="true">→</span></a><a class="button secondary" href="#dau-ra">Xem bản tổng kết mẫu</a></div>
+        <p class="micro">Bản giới thiệu sản phẩm · Nội dung minh họa, chưa kết nối dữ liệu Lark trực tiếp</p>
+      </div>
+      <aside class="report-card" aria-label="Minh họa báo cáo tuần">
+        <div class="windowbar"><span class="dots"><i></i><i></i><i></i></span><span>NHỊP VIỆC / TỔNG KẾT TUẦN</span><span>•••</span></div>
+        <div class="report-title">Bản tin công việc tuần</div>
+        <div class="report-meta"><span class="pill">21–25 / 09</span><span class="pill">3 đầu việc</span><span class="pill">Bản nháp</span></div>
+        <div class="report-row"><span class="num">01</span><span><b>Hoàn thiện nội dung giới thiệu</b><br><span class="small">Đã cập nhật bản nháp và gửi nhóm rà soát.</span></span><span class="status">Hoàn tất</span></div>
+        <div class="report-row"><span class="num">02</span><span><b>Chuẩn bị bản trình bày</b><br><span class="small">Đã có dàn ý; đang chờ bổ sung hình minh họa.</span></span><span class="status wait">Đang làm</span></div>
+        <div class="report-row"><span class="num">03</span><span><b>Xác nhận lịch trao đổi</b><br><span class="small">Thời gian họp chưa được ghi rõ trong dữ liệu.</span></span><span class="status wait">Cần xác nhận</span></div>
+      </aside>
+    </section>
+    <div class="quote"><b>Ý tưởng:</b> biến những cập nhật rời rạc trong tuần thành một bức tranh công việc có mục tiêu, tiến độ và việc cần theo dõi.</div>
+
+    <section id="gioi-thieu" class="section">
+      <div class="section-head"><h2>Trợ lý này làm gì?</h2><p>Nhịp Việc hỗ trợ bạn rà soát thông tin và soạn bản tổng kết. Bạn vẫn là người kiểm tra nội dung trước khi dùng hoặc chia sẻ.</p></div>
+      <div class="grid three">
+        <article class="card"><div class="icon">✦</div><h3>Gom thông tin</h3><p>Tập hợp cập nhật công việc, ghi chú cá nhân và nội dung họp do bạn đưa vào.</p></article>
+        <article class="card"><div class="icon">⌘</div><h3>Sắp xếp theo chủ đề</h3><p>Nhóm việc theo dự án, kết quả, kế hoạch tiếp theo và điểm đang chờ xử lý.</p></article>
+        <article class="card"><div class="icon">✓</div><h3>Soạn bản dễ duyệt</h3><p>Trình bày ngắn gọn, giữ nguồn đối chiếu và đánh dấu phần còn thiếu dữ liệu.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><h2>Bớt thời gian tổng hợp thủ công</h2><p>Minh họa cách thay đổi quy trình làm báo cáo tuần.</p></div>
+      <table class="time-table"><thead><tr><th>Công việc</th><th>Cách làm thủ công</th><th>Có Nhịp Việc hỗ trợ</th></tr></thead><tbody>
+        <tr><td>Rà lại cập nhật</td><td>Đọc từng ghi chú, tin nhắn</td><td class="check">✓ Gom thành danh sách</td></tr>
+        <tr><td>Phân loại đầu việc</td><td>Tự nhóm theo dự án</td><td class="check">✓ Gợi ý nhóm và trạng thái</td></tr>
+        <tr><td>Viết bản tổng kết</td><td>Tự soạn và chỉnh định dạng</td><td class="check">✓ Tạo bản nháp có cấu trúc</td></tr>
+        <tr><td>Kiểm tra thông tin</td><td>Tìm lại nguồn từng mục</td><td class="check">✓ Gắn ghi chú nguồn để đối chiếu</td></tr>
+      </tbody></table>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><h2>Thông tin đầu vào</h2><p>Có thể bắt đầu với nội dung bạn gửi trực tiếp cho agent; tích hợp các nguồn khác tùy cấu hình thực tế.</p></div>
+      <div class="grid four">
+        <article class="card"><div class="icon">▤</div><h3>Cập nhật công việc</h3><p>Việc đã làm, tiến độ và kết quả trong tuần.</p></article>
+        <article class="card"><div class="icon">▦</div><h3>Bảng theo dõi</h3><p>Tên dự án, hạn việc, người phụ trách và trạng thái.</p></article>
+        <article class="card"><div class="icon">◷</div><h3>Ghi chú cuộc họp</h3><p>Kết luận, quyết định và việc cần tiếp tục.</p></article>
+        <article class="card"><div class="icon">✎</div><h3>Ghi chú cá nhân</h3><p>Các mẩu thông tin bạn muốn đưa vào báo cáo.</p></article>
+      </div>
+    </section>
+
+    <section id="quy-trinh" class="section">
+      <div class="section-head"><h2>Từ ghi chú đến bản tổng kết</h2><p>Quy trình 5 bước để nội dung tạo ra có thể kiểm tra được.</p></div>
+      <div class="workflow">
+        <article class="step"><div class="step-index">BƯỚC 01</div><h3>Nhận thông tin</h3><p>Tiếp nhận nội dung và khoảng thời gian cần tổng hợp.</p></article>
+        <article class="step"><div class="step-index">BƯỚC 02</div><h3>Lọc cập nhật</h3><p>Tìm kết quả, thay đổi tiến độ, kế hoạch và vấn đề.</p></article>
+        <article class="step"><div class="step-index">BƯỚC 03</div><h3>Đối chiếu nguồn</h3><p>So khớp dữ liệu; đánh dấu chỗ thiếu hoặc chưa thống nhất.</p></article>
+        <article class="step"><div class="step-index">BƯỚC 04</div><h3>Nhóm theo dự án</h3><p>Tách việc đã xong, đang làm và cần theo dõi tiếp.</p></article>
+        <article class="step"><div class="step-index">BƯỚC 05</div><h3>Soạn bản nháp</h3><p>Tạo tổng kết có cấu trúc để bạn rà soát và hoàn thiện.</p></article>
+      </div>
+    </section>
+
+    <section id="dau-ra" class="section">
+      <div class="section-head"><h2>Một bản tổng kết rõ ràng, dễ dùng</h2><p>Cấu trúc có thể tùy chỉnh theo yêu cầu môn học hoặc công việc.</p></div>
+      <div class="output">
+        <article class="card"><div class="icon">↗</div><h3>Kết quả trong tuần</h3><p>Các đầu việc hoàn tất, kèm kết quả và thông tin đối chiếu khi có.</p></article>
+        <article class="card"><div class="icon">◫</div><h3>Việc tiếp tục</h3><p>Các nhiệm vụ đang thực hiện, bước kế tiếp và mốc thời gian đã nêu.</p></article>
+        <article class="card"><div class="icon">!</div><h3>Vướng mắc cần chú ý</h3><p>Trở ngại, phụ thuộc hoặc mục cần xác nhận thêm.</p></article>
+        <article class="card"><div class="icon">⌁</div><h3>Nguồn tham khảo</h3><p>Ghi chú, tài liệu hoặc liên kết gốc do người dùng cung cấp.</p></article>
+      </div>
+      <p class="note">Nguyên tắc: không tự tạo tiến độ, số liệu hay kết luận khi nguồn chưa có; nội dung đầu ra cần được người dùng kiểm tra.</p>
+    </section>
+    <footer class="footer"><div class="footer-inner"><span><b style="color:var(--text)">Nhịp Việc AI</b> · Bản giới thiệu sản phẩm mẫu</span><span>Thiết kế riêng cho Trang · 2026</span></div></footer>
+  </main>
+</body>
+</html>
